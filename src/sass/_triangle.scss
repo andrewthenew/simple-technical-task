@@ -1,0 +1,15 @@
+#triangle {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8rem 0 0 8rem;
+  border-color: transparent transparent transparent #3f47cc;
+
+  cursor: pointer;
+  z-index: 10;
+}
