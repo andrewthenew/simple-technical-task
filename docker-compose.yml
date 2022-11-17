@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  librea2dock:
+    container_name: st
+    image: st
+    build:
+      target: mydev
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    tty: true
+    ports:
+      - 3031:80
+    environment:
+      VIRTUAL_HOST: simple.test
+    networks:
+      - app-net
+
+networks:
+  app-net:
+    external: true
