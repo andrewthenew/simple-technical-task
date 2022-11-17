@@ -1,4 +1,4 @@
-### To launch this run:
+### To prepare this run:
 ```
 npm i
 gulp
